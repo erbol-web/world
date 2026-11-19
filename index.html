@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Solar System 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loadingScreen">
+ <div class="loading-content">
+  <div class="loading-kicker">DEEP SPACE NETWORK</div>
+  <h1 class="loading-title">ENTERING <span>SPACE...</span></h1>
+  <div class="loading-subtitle">EXPLORE&nbsp;&nbsp;•&nbsp;&nbsp;LEARN&nbsp;&nbsp;•&nbsp;&nbsp;DISCOVER</div>
+  <div class="loading-bar"><div class="loading-progress" id="loadingProgress"></div></div>
+  <div class="loading-meta">
+   <span id="loadingStatus">INITIALIZING</span>
+   <span id="loadingPercent">0%</span>
+  </div>
+  <div class="loading-status" id="loadingDetail">CALIBRATING DEEP-SPACE NAVIGATION...</div>
+ </div>
+ <div class="loading-corner left">SOLAR SYSTEM / 3D EXPLORATION</div>
+ <div class="loading-corner right">SYSTEM ONLINE</div>
+</div>
+
+<div id="loading">ENTERING SPACE...</div>
+<div id="app"></div>
+
+<div id="planetNav">
+ <div class="nav-title">PLANETS</div>
+ <button data-planet="Mercury">Mercury</button>
+ <button data-planet="Venus">Venus</button>
+ <button data-planet="Earth">Earth</button>
+ <button data-planet="Mars">Mars</button>
+ <button data-planet="Jupiter">Jupiter</button>
+ <button data-planet="Saturn">Saturn</button>
+ <button data-planet="Uranus">Uranus</button>
+ <button data-planet="Neptune">Neptune</button>
+</div>
+
+<div id="title">
+<h1>SOLAR SYSTEM</h1>
+<p>3D SPACE EXPLORATION</p>
+</div>
+
+<div id="hint">DRAG — ROTATE &nbsp;&nbsp; SCROLL — ZOOM &nbsp;&nbsp; CLICK — PLANET</div>
+
+<div id="info">
+<button class="close">×</button>
+<h2 id="n"></h2>
+<p id="d"></p>
+<div class="data">
+<div class="row"><span>Diameter</span><span id="di"></span></div>
+<div class="row"><span>Distance</span><span id="ds"></span></div>
+<div class="row"><span>Day</span><span id="da"></span></div>
+<div class="row"><span>Year</span><span id="yr"></span></div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
